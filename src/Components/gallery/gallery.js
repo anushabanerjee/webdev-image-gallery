@@ -37,6 +37,15 @@ class Gallery extends React.Component {
        })
     }
 
+    clearImages = () =>
+    {
+        this.setState({
+            images:[],
+            currentAddress:"",
+        })
+
+    }
+
     render = () => {
         return(
             
@@ -49,6 +58,7 @@ class Gallery extends React.Component {
                         type="text"
                         placeholder="Enter image url" />
                         <button onClick={this.onAddImage}>Add</button>
+                        <button onClick={this.clearImages}>Clear Screen</button>
                     </div>
 
                     <div className="list-box">

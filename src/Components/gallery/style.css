@@ -42,5 +42,8 @@ button{
     border-radius: 6px;
     margin-left: 10px;
     padding: 10px;
+    
+    display: flex;
+    flex-flow: row;
 
 }
